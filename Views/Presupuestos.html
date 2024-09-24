@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos</title>
+    <link rel="stylesheet" href="./../Css/estilos.css">
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <nav>
+        <input type="checkbox" id="check-menu" class="check-menu">
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/Views/Portfolio.html">Portfolio</a></li>
+            <li><a href="http://127.0.0.1:5500/Views/Presupuestos.html">Presupuestos</a></li>
+            <li><a href="http://127.0.0.1:5500/Views/Contacto.html">Contacto</a></li>
+        </ul>
+        <label for="check-menu" class="label-check">
+            <div class="menu-hamburguesa">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+        </label>
+    </nav>
+
+    <!-- cabecera -->
+    <header>
+        <img id="logompd" src="./../Assets/Imagenes/MPDesign-logo.png" alt="logo de MPDesign">
+        <h1>Presupuestos</h1>
+        <h3>hazte una idea de cuanto vale tu proyecto</h3>
+    </header>
+    <!--Contenedor-->
+    <div id="contenedor">
+        <section>
+            <h2>¿Cuánto vale tu idea?</h2>
+            <p class="parrafo">abajo podrás contarnos tu idea de proyecto. Procura contarnos las ideas bien detalladas y cual es el tiempo límite para llevarla a cabo</p>
+        </section>
+        <section>
+            <form action="#" method="get" enctype="multipart/form-data">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Déjanos tu número movil" required>
+
+                <label for="comentario">¡Cuéntanos tu idea!</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe aquí tu idea :D" required></textarea>
+
+                <label for="politica-de-privacidad">política de privacidad</label>
+                <textarea name="condiciones" id="politica-de-privacidad" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores, esse nemo aut eveniet iste, quae nulla illum autem commodi ipsum earum sapiente voluptates est! Maxime molestiae animi totam? Ipsam?</textarea>
+
+                <label for="checkbox">Acepto los términos y condiciones</label>
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+                
+                <input type="submit" name="boton" id="boton-enviar" class="botones">
+            </form>
+        </section>
+    </div>
+    <!-- pie de pagina -->
+    <footer>
+        <div class="menu-footer">
+            <a class="botones-footer" href="https://www.instagram.com/m.p_design/"><img class="logo-rrss" src="./../Assets/Imagenes/Logo-ig.png" alt="logo de instagram"></a>
+            <a class="botones-footer" href="https://mail.google.com/mail/u/0/?hl=es#inbox?compose=CllgCJlFCzCPjjrWSbdbpCwhXXCLJXSGdhCCjsHGdSRrlXklcXQtZrhmNKgrBKLcpzlJlZvnFlB"><img class="logo-rrss" src="./../Assets/Imagenes/Logo-mail.png" alt="logo mail"></a>
+        </div>
+        <p class="parrafo-footer">copyright MPDesign</p>
+        <div class="menu-footer">
+            <a class="botones-footer" href="http://127.0.0.1:5500/Views/Contacto.html">contacto</a>
+            <a class="botones-footer" href="e">aviso legal</a>
+        </div>
+    </footer>
+</body>
+</html>
