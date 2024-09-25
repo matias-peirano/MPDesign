@@ -39,7 +39,7 @@ RUTAS
     --color-h3: rgb(139, 203, 255);
     --color-p: #fff;
     --color-principal: #000;
-    --color-secundario: rgba(224, 224, 224, 0.626);
+    --color-secundario: rgba(224, 224, 224);
     --color-terciario: rgb(139, 203, 255);
 }
 
@@ -81,22 +81,21 @@ MENÚ DE NAVEGACIÓN
 ----------------------------------------------------------------------- */
 
 nav{
+    width: 100%;
     position: sticky;
     top: 0px;
     background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
 }
 .nav-links{
     width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    list-style: none;
 }
-.nav-links li a{
+.nav-links a{
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -105,26 +104,9 @@ nav{
     color: var(--color-principal);
     padding: 10px;
 }
-.nav-links li a:hover{
+.nav-links a:hover{
     color: var(--color-p);
     background-color: var(--color-terciario);
-}
-.menu-hamburguesa{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-.check-menu{
-    display: none;
-}
-.label-check{
-    display: none;
-}
-.linea{
-    width: 30px;
-    height: 3px;
-    margin: 4px 0;
-    background-color: var(--color-principal);
 }
 
 /*------------------------------------------------------------------------
@@ -139,6 +121,7 @@ header{
 }
 #logompd{
     width: 200px;
+    height: 200px;
 }
 
 /*------------------------------------------------------------------------
@@ -180,8 +163,8 @@ IMÁGENES
 ----------------------------------------------------------------------- */
 
 img{
-    width: 250px;
     border-radius: 20px;
+    object-fit: cover;
 }
 #fotoMatias{
     padding: 30px;
@@ -193,12 +176,21 @@ img{
     width: 100%;
     object-fit: cover;
 }
+.imghorizontal{
+    width: 100%;
+    object-fit: cover;
+}
 #ubicacion{
     display: flex;
     justify-content: center;
 }
 #imgubicacion{
     width: 600px;
+}
+.logo-rrss{
+    width: 33px;
+    height: 33px;
+    border-radius: 0;
 }
 
 /*------------------------------------------------------------------------
@@ -325,10 +317,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-terciario);
-}
-.logo-rrss{
-    width: 33px;
-    border-radius: 0;
+    padding: 10px;
 }
 .parrafo-footer{
     font-size: 15px;
@@ -353,7 +342,7 @@ RESPONSIVE
 
 @media screen and (max-width: 768px) {
 
-    .contenedor, nav, section, .seccion-horizontal{
+    .contenedor, nav, section, .seccion-horizontal, footer{
         flex-direction: column;
     }
 
@@ -396,36 +385,10 @@ RESPONSIVE
         justify-content: center;
         gap: 10px;
     }
-
-    .menu-hamburguesa{
-        height: 40px;
-        display: flex;
-        justify-content: center;
-    }
-    .label-check{
-        display: block;
-    }
     .nav-links{
-        display: none;
+        height: auto;
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 60%;
-        width: 100%;
-        row-gap: 5px;
-        background-color: var(--color-secundario);
-    }
-    .nav-links li a{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        height: 45px;
-    }
-    .nav-links li a:hover{
-        color: var(--color-terciario);
-        background: none;
-    }
-    .check-menu:checked + .nav-links{
-        display: flex;
     }
     form{
         margin-left: 5%;
