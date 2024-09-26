@@ -98,7 +98,7 @@ nav{
 .nav-links li{
     list-style: none;
 }
-.nav-links a{
+.nav-links li a{
     width: 100%;
     text-align: center;
     text-decoration: none;
