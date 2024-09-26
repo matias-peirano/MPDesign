@@ -95,6 +95,9 @@ nav{
     justify-content: center;
     column-gap: 20px;
 }
+.nav-links li{
+    list-style: none;
+}
 .nav-links a{
     width: 100%;
     text-align: center;
